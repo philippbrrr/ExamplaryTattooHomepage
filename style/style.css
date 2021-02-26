@@ -4,9 +4,9 @@
 }
 
 .custom-text{
-    line-height: 36px;
+    line-height: 28px;
     width: 70%;
-    font-size: large;
+    font-size: medium;
     text-align: justify;
     text-justify: inter-word;
     max-width: 624px;
