@@ -453,9 +453,9 @@
             </div>
         </div>
         <div id="team" class="container-fluid pt-5" style="width: 100%; padding-bottom: 100px ; background-color: black;">
-            <div class="no-gutters g-0 row flex-row-reverse">
+            <div class="no-gutters g-0 row flex-row-reverse  justify-content-around align-items-center ">
                 <!--MONO TEAM HEADING-->
-                <div class="col-lg g-0 py-5 d-flex justify-content-center" style=" background-color: black;">
+                <div class="d-lg-none g-0 py-5 d-flex justify-content-center" style=" background-color: black;">
                     <svg width="300" height="107" viewBox="0 0 300 107" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 106H300" stroke="white" stroke-width="2" />
                         <path
@@ -473,7 +473,7 @@
             <div class="no-gutters row g-0" style="background-color: black;">
 
                 <!-- IMG/INFO LUKAS-->
-                <div class="d-lg-none col-lg py-5 d-flex justify-content-center mx-5 ">
+                <div class="d-lg-none col-lg py-5 d-flex justify-content-center  ">
                     <div>
                         <div class="row">
                             <img style="max-width: 80vw; max-height: 80vw;" src="assets/img-team-lukas.jpg" alt="">
@@ -489,7 +489,7 @@
                     </div>
                 </div>
 
-                <div class=" col-lg py-4 d-flex justify-content-center ml-5 " style="margin-left:50px; ">
+                <!-- <div class=" col-lg py-4 d-flex justify-content-center ml-5 " style="margin-left:50px; ">
                     <div class="w-75" style="background-color: white; padding:1rem; transform: rotate(-20deg); ">
                         <div class="row">
                             <img style="max-width: 80vw; max-height: 80vw;" src="assets/img-team-lukas.jpg" alt="">
@@ -503,8 +503,47 @@
                             </h1>
                         </div>
                     </div>
+                </div> -->
+             
+                <div class="col-lg g-0 w-100 d-lg-block  d-none m-5 align-items-center" >
+                    <div class="row d-lg-block d-none g-0 py-5 d-flex justify-content-start w-75" style=" background-color: black; margin-left:-20px;">
+                        <svg  width="300" height="107" viewBox="0 0 300 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 106H300" stroke="white" stroke-width="2" />
+                            <path
+                                d="M97.872 48.16V76H93.648V48.16H85.92V44.08H105.6V48.16H97.872ZM109.931 76V44.08H127.403V48.4H114.107V58.096H123.035V62.032H114.107V71.68H127.403V76H109.931ZM153.195 76L149.259 64.768H139.275L135.339 76H130.779L141.867 44.128H146.667L157.755 76H153.195ZM144.267 50.32L140.619 60.736H147.867L144.267 50.32ZM188.6 76V50.992L179.096 64.72H175.832L166.376 50.992V76H162.056V44.08H166.808L177.464 59.488L188.12 44.08H192.92V76H188.6Z"
+                                fill="white" />
+                            <line x1="93" y1="8.84577e-10" x2="93" y2="27" stroke="white" stroke-width="2" />
+                            <path
+                                d="M55.472 22V9.496L50.72 16.36H49.088L44.36 9.496V22H42.2V6.04H44.576L49.904 13.744L55.232 6.04H57.632V22H55.472ZM78.5926 22.12C77.5046 22.12 76.4726 21.92 75.4966 21.52C74.5366 21.104 73.6886 20.52 72.9526 19.768C72.2166 19.032 71.6406 18.176 71.2246 17.2C70.8086 16.208 70.6006 15.168 70.6006 14.08C70.6006 12.992 70.8006 11.968 71.2006 11.008C71.6166 10.032 72.2006 9.168 72.9526 8.416C73.6886 7.68 74.5366 7.104 75.4966 6.688C76.4726 6.272 77.5046 6.064 78.5926 6.064C79.6806 6.064 80.7126 6.272 81.6886 6.688C82.6646 7.104 83.5206 7.68 84.2566 8.416C84.9926 9.152 85.5686 10.008 85.9846 10.984C86.4006 11.96 86.6086 12.992 86.6086 14.08C86.6086 15.168 86.4006 16.208 85.9846 17.2C85.5686 18.176 84.9926 19.032 84.2566 19.768C83.5206 20.504 82.6646 21.08 81.6886 21.496C80.7126 21.912 79.6806 22.12 78.5926 22.12ZM78.5926 8.248C77.8086 8.248 77.0566 8.4 76.3366 8.704C75.6326 8.992 75.0086 9.408 74.4646 9.952C73.9206 10.496 73.4966 11.128 73.1926 11.848C72.9046 12.552 72.7606 13.296 72.7606 14.08C72.7606 14.88 72.9126 15.648 73.2166 16.384C73.5206 17.104 73.9366 17.728 74.4646 18.256C75.0086 18.8 75.6326 19.224 76.3366 19.528C77.0566 19.816 77.8086 19.96 78.5926 19.96C79.3766 19.96 80.1206 19.816 80.8246 19.528C81.5446 19.224 82.1766 18.8 82.7206 18.256C83.2486 17.728 83.6646 17.104 83.9686 16.384C84.2726 15.648 84.4246 14.88 84.4246 14.08C84.4246 13.296 84.2726 12.552 83.9686 11.848C83.6806 11.128 83.2646 10.496 82.7206 9.952C82.1766 9.408 81.5446 8.992 80.8246 8.704C80.1206 8.4 79.3766 8.248 78.5926 8.248ZM108.911 22L101.711 10.288V22H99.575V6.04H101.663L109.103 18.088V6.04H111.215V22H108.911ZM132.171 22.12C131.083 22.12 130.051 21.92 129.075 21.52C128.115 21.104 127.267 20.52 126.531 19.768C125.795 19.032 125.219 18.176 124.803 17.2C124.387 16.208 124.179 15.168 124.179 14.08C124.179 12.992 124.379 11.968 124.779 11.008C125.195 10.032 125.779 9.168 126.531 8.416C127.267 7.68 128.115 7.104 129.075 6.688C130.051 6.272 131.083 6.064 132.171 6.064C133.259 6.064 134.291 6.272 135.267 6.688C136.243 7.104 137.099 7.68 137.835 8.416C138.571 9.152 139.147 10.008 139.563 10.984C139.979 11.96 140.187 12.992 140.187 14.08C140.187 15.168 139.979 16.208 139.563 17.2C139.147 18.176 138.571 19.032 137.835 19.768C137.099 20.504 136.243 21.08 135.267 21.496C134.291 21.912 133.259 22.12 132.171 22.12ZM132.171 8.248C131.387 8.248 130.635 8.4 129.915 8.704C129.211 8.992 128.587 9.408 128.043 9.952C127.499 10.496 127.075 11.128 126.771 11.848C126.483 12.552 126.339 13.296 126.339 14.08C126.339 14.88 126.491 15.648 126.795 16.384C127.099 17.104 127.515 17.728 128.043 18.256C128.587 18.8 129.211 19.224 129.915 19.528C130.635 19.816 131.387 19.96 132.171 19.96C132.955 19.96 133.699 19.816 134.403 19.528C135.123 19.224 135.755 18.8 136.299 18.256C136.827 17.728 137.243 17.104 137.547 16.384C137.851 15.648 138.003 14.88 138.003 14.08C138.003 13.296 137.851 12.552 137.547 11.848C137.259 11.128 136.843 10.496 136.299 9.952C135.755 9.408 135.123 8.992 134.403 8.704C133.699 8.4 132.955 8.248 132.171 8.248Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="custom-text text-justify text-white align-items-center" style="margin-left:50px">
+                        <div id="activeTeamText" class="">
+                            <h1>L U K A S</h1>
+                            <p class="text-lg-justify">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam
+                                et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam
+                            </p>
+                        </div>
+                        <div id="inactiveTeamText" class=" d-none">
+                            <h1>S O P H I E</h1>
+                            <p class="text-lg-justify">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam
+                                et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam
+                            </p>
+                        </div>
+                       
+                    </div>
                 </div>
-
                 <!-- UND SVG -->
                 <div class="d-lg-none col-lg-6 g-0 py-3 pb-3 d-flex justify-content-center">
                     <svg width="305" height="57" viewBox="0 0 305 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -517,18 +556,18 @@
 
                 </div>
 
-                <div class="col-lg-1 g-0  mb-5 pb-3 d-flex justify-content-center text-white align-items-center">
+                <!-- <div class="col-lg-1 g-0  mb-5 pb-3 d-flex justify-content-center text-white align-items-center">
                     <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="53" cy="53" r="51.5" fill="black" stroke="white" stroke-width="3" stroke-dasharray="4 4"/>
                         <path d="M59.928 77.984C57.768 79.52 55.2 80.288 52.224 80.288C49.584 80.288 47.064 79.664 44.664 78.416C42.264 77.12 40.296 75.272 38.76 72.872C36.84 69.992 35.88 66.944 35.88 63.728C35.88 63.056 35.976 62.096 36.168 60.848C36.504 58.928 37.128 57.176 38.04 55.592C38.952 53.96 40.104 52.568 41.496 51.416L40.632 50.12C39.24 48.2 38.544 46.376 38.544 44.648C38.544 42.968 38.856 41.36 39.48 39.824C40.104 38.24 40.992 36.872 42.144 35.72C43.296 34.568 44.616 33.68 46.104 33.056C47.64 32.384 49.224 32.048 50.856 32.048C54.264 32.048 57.192 33.32 59.64 35.864C60.792 37.064 61.68 38.504 62.304 40.184C62.928 41.864 63.24 43.64 63.24 45.512H56.904C56.904 43.4 56.328 41.72 55.176 40.472C54.024 39.176 52.584 38.528 50.856 38.528C49.272 38.528 47.88 39.08 46.68 40.184C45.528 41.24 44.952 42.464 44.952 43.856C44.952 44.72 45.24 45.584 45.816 46.448L60.792 68.048C61.224 66.8 61.44 65.528 61.44 64.232V61.712H67.776V64.088C67.776 67.832 66.792 71.072 64.824 73.808L69.144 80H61.296L59.928 77.984ZM45.168 56.672C44.304 57.536 43.608 58.568 43.08 59.768C42.552 60.968 42.288 62.24 42.288 63.584C42.288 65.552 42.888 67.448 44.088 69.272C45.48 71.432 47.376 72.824 49.776 73.448C50.736 73.688 51.6 73.808 52.368 73.808C53.856 73.808 55.176 73.472 56.328 72.8L45.168 56.672Z" fill="white"/>
                         </svg>
                         
 
-                </div>
+                </div> -->
 
                 <!-- IMG/INFO SOPHIE-->
               
-                <div class="d-lg-none col-lg py-5 d-flex justify-content-center">
+                <div class="d-lg-none col-lg py-5 d-flex justify-content-center" >
                     <div>
                         <div class="row g-0 " >
                             <img style="max-width: 80vw; max-height: 80vw;" src="assets/img-team-sophie.jpg" alt="">
@@ -544,12 +583,12 @@
                     </div>
 
                 </div>
-                <div class=" col-lg-5 py-4 d-flex  justify-content-center" style="margin-right:50px;  transform: rotate(10deg);">
-                    <div class="w-75" style="background-color: black; padding:1rem; border:3px dotted white;">
+                <div class=" d-none d-lg-block col-lg-5 py-4 d-flex  justify-content-center" style="margin-bottom:100px; margin-top:100px; transform: scale(0.8);  ;">
+                    <div id="inactive-member" class="w-75" style="background-color: white; padding:1rem;   transform: rotate(-15deg); opacity: 0.3 ">
                         <div class="row">
                             <img style="max-width: 80vw; max-height: 80vw;" src="assets/img-team-sophie.jpg" alt="">
                         </div>
-                        <div class="row text-white mt-2">
+                        <div class="row text-black mt-2">
                             <p class="m-0">
                                 FINELINE | TATTOO
                             </p>
@@ -558,10 +597,26 @@
                             </h1>
                         </div>
                     </div>
-                </div>
+                    <div id="active-member" class="w-75" style="background-color: white; padding:1rem; transform: rotate(-15deg); margin-left:-100px; margin-top:-550px; ">
+                        <div class="row">
+                            <img style="max-width: 80vw; max-height: 80vw;" src="assets/img-team-lukas.jpg" alt="">
+                        </div>
+                        <div class="row text-black mt-2">
+                            <p class="m-0">
+                                FINELINE | TATTOO
+                            </p>
+                            <h1>
+                                <strong>L U K A S</strong>
+                            </h1>
+                        </div>
+                    </div>
                 
+                </div>
+               
             </div>
-
+            <div class="d-none d-lg-flex justify-content-start" style="margin-left:100px" >
+                <button onclick="javascript: changeTeamContent()" type="button" class="btn btn-outline-light btn-lg">next member</button>
+            </div>  
 
         </div>
 
@@ -678,7 +733,7 @@
     <script src="/docs/4.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
+    <script src="index.js"></script>
 
 </body>
 
